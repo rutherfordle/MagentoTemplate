@@ -15,10 +15,8 @@
         $logfh = fopen("ecom.log", 'a') or die("can't open log file");
 
         // Initiate cURL session
-        $service = "http://133.164.64.128:9000/ManagementRESTService.svc/";
-        //$service = "http://156.79.67.241:9000/ManagementRESTService.svc/";
 
-		include '/includes/connect.php';
+	include '/includes/connect.php';
         $url = $service . $request;
         $ch = curl_init($url);
 		
